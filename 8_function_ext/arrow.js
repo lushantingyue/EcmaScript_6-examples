@@ -30,4 +30,6 @@ var fullname = full({first: 'hello', last: 'world'});
     return x * x;
 });
 // 简化为
-[1, 2, 3].map(x => x * x);
+var arr = [1, 2, 3].map(x => x * x);    //  [1 , 4, 9]
+
+// 嵌套的箭头函数
