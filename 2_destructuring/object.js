@@ -13,3 +13,9 @@ bar // "bbb"
 let { baz, prop} = { prop: "a", bar: "bbb" };   // 没有对应属性名
 baz // undefined
 prop
+
+let { fooo: bazz } = { fooo: "aaa", bar: "bbb" };
+bazz // "aaa"
+fooo // error: foo is not defined
+// 上面代码中，foo是匹配的模式，baz才是变量。
+// 真正被赋值的是变量baz，而不是模式foo。
